@@ -1,0 +1,19 @@
+problem_definition:
+  name: "Predict House Prices"
+  description: "A regression problem to predict house prices based on features."
+
+data_collection:
+  source: "csv"
+  file_path: "data/housing.csv"
+
+data_preparation:
+  missing_values: "mean"
+  normalize: true
+
+data_analysis:
+  correlation_threshold: 0.5
+
+model_building:
+  model_type: "linear_regression"
+  train_test_split: 0.8
+  metrics: ["rmse", "r2"]
